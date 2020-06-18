@@ -1,0 +1,10 @@
+{{ range .Site.Menus.main.ByWeight }}
+    <li class="site-nav-item">
+        <a title="{{ .Name }}" href="{{ .URL }}">
+            {{ with .Pre}}
+            {{.}} 
+            {{ end}}
+            {{ .Name }}
+        </a>
+    </li>
+{{ end }}

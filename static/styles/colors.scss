@@ -1,0 +1,50 @@
+// Colours //
+// ============================================================ //
+// ============================================================ //
+
+// Sailor Blue (#00203FFF) and Mint (#ADEFD1FF)
+// $primary: #ADEFD1FF;
+// $background: #00203FFF;
+
+
+// Gray (#606060FF) and Lime Punch (#D6ED17FF)
+// $primary: #D6ED17FF;
+// $background: #606060FF;
+
+// Black (#101820FF) and Blazing Yellow (#FEE715FF)
+// $primary: #FEE715FF;
+// $background: #101820FF;
+
+// $primary: #3182ce;
+// $background: #fefefe;
+
+// $text: #4a5568;
+
+
+$primary: #01FF70;
+$background: #fefefe;
+
+$text: #042330;
+$lighter: #3a4649;
+
+
+$lightprimary : lighten($primary,30%);
+// $text: #fefefeff;
+
+// Dark and light are inverse because it is light mode now
+$darker: darken( $background, 2% );
+$lightest: lighten( $lighter, 5% );
+
+$lighterthanever : lighten($lightest,60%);
+
+$selection: $lighterthanever;
+
+
+
+$textGray: $lighter;
+$textGrayer: $lightest;
+
+//code
+
+$codeBackground : #f7fafc;
+$codeBorder: #edf2f7;

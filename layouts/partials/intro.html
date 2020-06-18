@@ -1,0 +1,9 @@
+{{ if .Site.Params.intro }}
+<header class="post-header post-container">
+    <h1 class="post-title" itemprop="name">{{ .Site.Params.headline }}</h1>
+    <p class="site-description">{{ .Site.Params.description }}</p>
+
+    {{ partial "intro-sections.html" . }}
+</header>
+
+{{ end }}

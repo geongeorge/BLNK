@@ -1,0 +1,12 @@
+name = "BLNK"
+license = "MIT"
+licenselink = "https://github.com/geongeorge/BLNK/blob/master/LICENSE.md"
+description = "BLNK: A Hugo Theme - the name says it all"
+homepage = "https://github.com/geongeorge/BLNK"
+tags = ["blog", "technical", "personal"]
+features = ["blog", "technical", "personal"]
+min_version = "0.41"
+
+[author]
+    name = "Geon George"
+    homepage = "https://geongeorge.com"
