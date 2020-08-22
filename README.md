@@ -8,8 +8,6 @@ Modified from the [ghostwriter theme from jbub](https://github.com/jbub/ghostwri
 Inside the folder of your Hugo site run:
 
 ```bash
-$ mkdir themes
-$ cd themes
 $ git clone https://github.com/geongeorge/BLNK themes/BLNK
 ```
 
