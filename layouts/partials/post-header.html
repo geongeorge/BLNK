@@ -4,7 +4,11 @@
         <p class="post-description" itemprop="description">{{ .Description }}</p>
     {{ end }}
     <p class="post-date{{ if not .Site.Params.readingTime }} post-line{{ end }}">
-        <span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ dateFormat (default "Mon, Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time></span>
+        <span>
+            <span style="display: inline-block; position: relative;">
+                <svg style="position:relative; top: 4px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm-2 2H9v2H7V5H4v4h16V5h-3v2h-2V5zm5 6H4v8h16v-8z"/></svg>
+            </span>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ dateFormat (default "Mon, Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time></span>
         <!-- <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -13,11 +17,18 @@
         </span> -->
         {{ if .Site.Params.readingTime }}
         <!-- <p class="post-reading post-line"> -->
-            &nbsp;<span>⏱️{{ .Page.ReadingTime }} min read</span>
+            &nbsp;<span>
+                <span style="display: inline-block; position: relative;">
+                    <svg style="position:relative; top: 4px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z"/></svg>
+                </span>
+                {{ .Page.ReadingTime }} min read</span>
         <!-- </p> -->
     {{ end }}
     </p>
-    <hr>
+    <div class="wave-line">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    </div>
     <!-- {{ if .Site.Params.readingTime }}
         <p class="post-reading post-line">
             <span>{{ .Site.Params.readingTimeText }} {{ .Page.ReadingTime }} min read</span>

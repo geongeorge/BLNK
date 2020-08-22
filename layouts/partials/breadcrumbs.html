@@ -2,7 +2,10 @@
     <a href="/">Home</a>
     {{ range (split .RelPermalink "/") }}
     {{ if gt (len . ) 0 }}
-    / <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+    <div style="display: inline-block; position: relative;">
+        <svg style="position: relative; top: 7px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 12l-4 4V8z"/></svg>
+    </div>
+     <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
     {{ end }}
-    {{ end }} 🚩
+    {{ end }}
 </div>
