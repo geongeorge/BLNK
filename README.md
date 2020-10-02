@@ -118,3 +118,9 @@ disqusShortname = "XXX"
 
 You can also inject arbitrary HTML into `<head>` simply by overriding the `extra-in-head.html`
 partial, which is meant for that purpose.
+
+
+# Hosting
+
+- Read: [How to host your Hugo blog](https://prohugo.com/host-hugo-website-on-github/)
+- Read: [Places to host Hugo blog for free](https://prohugo.com/host-hugo-websites-for-free/)
